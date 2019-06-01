@@ -1,0 +1,28 @@
+
+:root {
+  /**
+   * Colour palette
+   */
+  --c-primary: hsl(74, 64%, 46%);
+  --c-secondary: hsl(34, 72%, 49%);
+  --c-tertiary: hsl(0, 0%, 100%);
+
+  /**
+   * Layout
+   */
+  --l-gutter: 1rem;
+
+  /**
+   * Typography
+   */
+  --t-primary: 'Fira Sans';
+  --t-secondary: ;
+  --t-tertiary: monospace;
+
+  --t-headline: var(--t-primary);
+  --t-subtitle: var(--t-primary);
+  --t-body: var(--t-primary);
+  --t-code: var(--t-tertiary);
+}
+
+
