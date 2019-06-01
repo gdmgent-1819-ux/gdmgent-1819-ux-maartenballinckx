@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eindopdracht UX</title>
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:,300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
+    <script>
+        function openSlideMenu() {
+            document.getElementById("menu").style.width = "275px"
+            document.getElementById("content").style.marginLeft = "275px"
+        }
+
+        function closeSlideMenu() {
+            document.getElementById("menu").style.width = "0px"
+            document.getElementById('content').style.marginLeft = "0px"
+        }
+    </script>
 </head>
+
 <body>
+    <header>
+        <div class="color-overlay"></div>
+        <div id="NAV">
+            <span class="slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </span>
+
+            <div id="menu" class="nav">
+                <a href="#" class="close" onclick="closeSlideMenu()">
+                    <i class=" fas fa-chevron-left"></i> <!-- kan kleur niet veranderen van dit element -->
+                </a>
+                <a href="#">Home</a>
+                <a href="#">Omgeving</a>
+                <a href="#">Line-up zomer</a>
+                <a href="#">Prijzen</a>
+                <a href="#">Reserveren</a>
+                <a href="#">Contact</a>
+                <a href="#">Vragen</a>
+            </div>
+            <a class=social href="https://www.instagram.com/?hl=nl" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a class=social href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a class=social href="https://twitter.com/?lang=nl" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p class="titel">
+            CAMPING<br>UNGA
+        </p>
+        <a href="#mainscroll" id="scrolldown"><i class="fas fa-chevron-down"></i>
+        </a>
+    </header>
+    <main id="mainscroll">
+        <div class="pictures" id="picture1"></div>
+        <p class="tekst" id="tekst1">Camping Ungu is de ideale plek om het beste van je zomervakantie te maken. Met de
+            beste line-up van alle jongerencamping, voor een aardig prijsje. Hopelijk zien we je volgende zomer, tot
+            dan!</p>
+        <p class="tekst" id="tekst2">
+            Je kan een tent huren of zelf je tent meedoen en een plaatsje huren voor een goedkope prijs. Voor meer info
+            over de prijzen.
+        </p>
+        <div class="pictures" id="picture2"></div>
+        <div class="pictures" id="picture3"></div>
+        <p class="tekst" id="tekst3">
+            We liggen op een zeer rustige locatie vlak bij een zwemgebied. voor meer info over de omgeving.
+        </p>
+    </main>
+    <footer>
+        <p> Camping Unga, Oude Veldstraat 152, 9041 Oostakker <br><svg width="105" height="1">
+                <line x2="105" transform="translate(0 0.5)" fill="none" stroke="var(--c-primary)" stroke-width="1" />
+            </svg><br> Voorwaarden Privacy © 2018 -2019 site by Maarten</p>
+    </footer>
 </body>
+
 </html>
